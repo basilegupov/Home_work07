@@ -1,30 +1,59 @@
 EXT:
-  MP4
-  MKV
-  OGG
-  WAV
-  MOV
-  TXT
-  JPEG
-  DOC
-  PPTX
   DOCX
   JPG
-  MP3
-  XLSX
-  AVI
+  TXT
   PDF
   SVG
+  DOC
+  WAV
+  PPTX
   PNG
+  JPEG
+  MP4
+  AVI
+  MP3
+  MKV
+  XLSX
+  MOV
+  OGG
 EXT_UNKNOWN:
-  ODT
-  BMP
-  TXX
-  TEXT
-  DOCV
-  WAXV
   PPTXX
   MOX
+  DOCV
+  TEXT
+  TXX
+  WAXV
+  BMP
+  ODT
+AUDIO:
+  file_from_dir1_dir2.ogg
+  file_from_dir3_dir2.ogg
+  file_from_dir1_dir2.wav
+  file_from_dir3_dir2.mp3
+  file_from_dir5.mp3
+  file_from_dir3_dir2.wav
+  ff.mp3
+OTHER:
+  file2_from_dir1_dir2.mox
+  file_from_dir3_.txx
+  file1_from_dir3_dir2.WAXV
+  file_from_dir5.docV
+  file_from_dir3_dir2.odt
+  not_extention
+  file_from_dir3_dir2.docV
+  file_from_dir5.bmp
+  file_from_dir1_dir2.pptxx
+  file1_from_dir1_dir2.WAXV
+  FILE2_FROM_dir2.MOX
+  file_from_dir1_dir2..bmp
+  file_from_dir1_dir2.odt
+  FILE3.text
+  FILE2.text
+  file_from_dir3_dir2.pptxx
+  file_from_dir3_dir2.bmp
+  file_from_dir3_dir2..bmp
+  FILE1_FROM_dir2.WAXV
+  file2_from_dir3_dir2.mox
 IMAGES:
   file_from_dir1_dir2.png
   file_from_dir5.jpg
@@ -49,35 +78,6 @@ VIDEO:
   file2_from_dir1_dir2.mov
   ff.mkv
   file_from_dir3_dir2.Mkv
-OTHER:
-  file2_from_dir1_dir2.mox
-  file_from_dir3_.txx
-  file1_from_dir3_dir2.WAXV
-  file_from_dir5.docV
-  file_from_dir3_dir2.odt
-  not_extention
-  file_from_dir3_dir2.docV
-  file_from_dir5.bmp
-  file_from_dir1_dir2.pptxx
-  file1_from_dir1_dir2.WAXV
-  FILE2_FROM_dir2.MOX
-  file_from_dir1_dir2..bmp
-  file_from_dir1_dir2.odt
-  FILE3.text
-  FILE2.text
-  file_from_dir3_dir2.pptxx
-  file_from_dir3_dir2.bmp
-  file_from_dir3_dir2..bmp
-  FILE1_FROM_dir2.WAXV
-  file2_from_dir3_dir2.mox
-AUDIO:
-  file_from_dir1_dir2.ogg
-  file_from_dir3_dir2.ogg
-  file_from_dir1_dir2.wav
-  file_from_dir3_dir2.mp3
-  file_from_dir5.mp3
-  file_from_dir3_dir2.wav
-  ff.mp3
 DOCUMENTS:
   kyrylytsja_fajl_iz_dir6.txt
   file_from_dir5.doc

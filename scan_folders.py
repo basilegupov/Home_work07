@@ -89,14 +89,16 @@ def out_log_folder(folder, file_log='scan.log'):
     # print(result)
 
     # file_log = folder / file_log
+    items = [item for item in result]
+
     with open(file_log, 'w') as f_out:
 
-        for item in result:
+        for item in items:
         
             if item != 'ARCHIVES' and item != 'FOLDERS':
 
                 # print(item, result[item])
-
+        
                 f_out.write(f'{item}:\n')
 
                 for file in result[item]:
