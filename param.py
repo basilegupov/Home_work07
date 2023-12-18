@@ -26,7 +26,7 @@ if len(WORK_EXTENTIONS) == 0:
         'ZIP': 'ARCHIVES', 'GZ': 'ARCHIVES', 'TAR': 'ARCHIVES', 
         '*': 'OTHER'}
     
-WORK_FOLDERS = set([fold for ext, fold in WORK_EXTENTIONS.items()])
+WORK_FOLDERS = set([fold.lower() for ext, fold in WORK_EXTENTIONS.items()])
 
 if __name__ == '__main__':
     print(WORK_EXTENTIONS)

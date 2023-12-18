@@ -13,7 +13,7 @@ def init_result():
     result['EXT'] = set()
     result['EXT_UNKNOWN'] = set()
     for item in param.WORK_FOLDERS:
-        result[item] = []
+        result[item.upper()] = []
     return 'Ok'
 
 def get_extensions(file_name):
@@ -27,7 +27,7 @@ def scan_folder_rec(folder):
         if item.is_dir():
            
             # if item.name.upper() not in param.WORK_FOLDERS:
-            if item.name not in param.WORK_FOLDERS:
+            if item.name.upper() not in param.WORK_FOLDERS:
                 result['FOLDERS'].append(item)
                 scan_folder_rec(item)
             continue
@@ -61,7 +61,7 @@ def out_log_folder_rec(folder):
 
         if item.is_dir():
            
-            if item.name in param.WORK_FOLDERS and item.name != 'ARCHIVES':
+            if item.name in param.WORK_FOLDERS and item.name.upper() != 'ARCHIVES':
                 
                 result['FOLDERS'].append(item)
                 out_log_folder_rec(item)

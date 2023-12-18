@@ -1,28 +1,28 @@
 EXT:
-  PPTX
-  PNG
-  SVG
-  OGG
-  PDF
-  WAV
+  MP4
   MKV
+  OGG
+  WAV
   MOV
-  MP3
+  TXT
   JPEG
   DOC
+  PPTX
+  DOCX
   JPG
+  MP3
   XLSX
   AVI
-  MP4
-  DOCX
-  TXT
+  PDF
+  SVG
+  PNG
 EXT_UNKNOWN:
-  TXX
   ODT
-  TEXT
-  WAXV
-  DOCV
   BMP
+  TXX
+  TEXT
+  DOCV
+  WAXV
   PPTXX
   MOX
 IMAGES:
@@ -34,6 +34,21 @@ IMAGES:
   file_from_dir5.jpeg
   file_from_dir1_dir2.svg
   file_from_dir3_dir2.svg
+VIDEO:
+  file_from_dir5.MP4
+  file_from_dir1_dir2.aVI
+  file_from_dir3_dir2.MP4
+  file_from_dir3_dir2.aVI
+  file_from_dir5.Mkv
+  file_from_dir1_dir2.avi
+  ff_old.mkv
+  FILE2_FROM_dir2.MOV
+  file1_from_dir3_.mov
+  file_from_dir3_dir2.avi
+  file2_from_dir3_dir2.mov
+  file2_from_dir1_dir2.mov
+  ff.mkv
+  file_from_dir3_dir2.Mkv
 OTHER:
   file2_from_dir1_dir2.mox
   file_from_dir3_.txx
@@ -80,18 +95,3 @@ DOCUMENTS:
   file_from_dir3_dir2.txt
   file_from_dir1_dir2.xlsx
   ff_from_dir6dir7dir7.doc
-VIDEO:
-  file_from_dir5.MP4
-  file_from_dir1_dir2.aVI
-  file_from_dir3_dir2.MP4
-  file_from_dir3_dir2.aVI
-  file_from_dir5.Mkv
-  file_from_dir1_dir2.avi
-  ff_old.mkv
-  FILE2_FROM_dir2.MOV
-  file1_from_dir3_.mov
-  file_from_dir3_dir2.avi
-  file2_from_dir3_dir2.mov
-  file2_from_dir1_dir2.mov
-  ff.mkv
-  file_from_dir3_dir2.Mkv

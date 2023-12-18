@@ -57,9 +57,10 @@ def main(folder_path):
 
         if item not in ('FOLDERS', 'EXT', 'EXT_UNKNOWN', 'ARCHIVES'):
             for file in scan_folders.result[item]:
-                handle_file(file, folder_path, item)
+                handle_file(file, folder_path, item.lower())
+
     for file in scan_folders.result['ARCHIVES']:
-        handle_archive(file, folder_path, 'ARCHIVES')
+        handle_archive(file, folder_path, 'ARCHIVES'.lower())
     
     remove_empty_folders(folder_path)
 
