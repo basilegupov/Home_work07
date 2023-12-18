@@ -53,15 +53,8 @@ def main(folder_path):
     for file in scan_folders.result['ARCHIVES']:
         handle_archive(file, folder_path, 'ARCHIVES')
 
-    scan_folders.scan_folder(folder_path)
-    with open('scan.log', 'w') as f_out:
-        for item in scan_folders.result:
-
-            if item not in ('FOLDERS', 'ARCHIVES'):
-                f_out.write(f'{item}:{scan_folders.result[item]}\n')
-
-    remove_empty_folders(folder_path)
-
+    scan_folders.out_log_folder(folder_path)
+    
 if __name__ == '__main__':
     path = sys.argv[1]
     print(f'Start in {path}')

@@ -1,7 +1,66 @@
-EXT:set()
-EXT_UNKNOWN:set()
-IMAGES:[]
-OTHER:[]
-AUDIO:[]
-VIDEO:[]
-DOCUMENTS:[]
+EXT:
+  WAV
+  TXT
+  AMR
+  JPEG
+  DOC
+  PPTX
+  MP3
+  MKV
+  JPG
+  SVG
+  PDF
+  DOCX
+  PNG
+EXT_UNKNOWN:
+  PY
+  H
+DOCUMENTS:
+  Temp/DOCUMENTS/tsMzhiSCHgr_.pptx
+  Temp/DOCUMENTS/Go__ZHx7ch.pdf
+  Temp/DOCUMENTS/0uj_qUchL.doc
+  Temp/DOCUMENTS/VSpHzhR9U.pdf
+  Temp/DOCUMENTS/rKJCHAyQN.pdf
+  Temp/DOCUMENTS/NpuwSmB_.pptx
+  Temp/DOCUMENTS/aa_0IMtI.txt
+  Temp/DOCUMENTS/ppuQOTS_JU.pdf
+  Temp/DOCUMENTS/urmUBYog.docx
+OTHER:
+  Temp/OTHER/H6Y9LIji.h
+  Temp/OTHER/pngz_JAEG.h
+  Temp/OTHER/kUjitjuSTO.h
+  Temp/OTHER/MRJIr9jZm.py
+AUDIO:
+  Temp/AUDIO/ftzhT_LOo.amr
+  Temp/AUDIO/_fl_EWsji.wav
+  Temp/AUDIO/KEk5PFs5.wav
+  Temp/AUDIO/_vt_SCHqOt.mp3
+VIDEO:
+  Temp/VIDEO/SHH8CZHmpB.mkv
+IMAGES:
+  Temp/IMAGES/VSchjJA3qy.jpg
+  Temp/IMAGES/DQ_vH4Sl.png
+  Temp/IMAGES/AJErJUji_2d.svg
+  Temp/IMAGES/__ELi04C.jpg
+  Temp/IMAGES/4_etjub_r.jpeg
+  Temp/IMAGES/LjicZWonB.jpeg
+  Temp/IMAGES/9b_SCHchOa5.png
+  Temp/IMAGES/SFYMQJUoO.jpg
+  Temp/IMAGES/Z6cjSCHv_JA.jpeg
+  Temp/IMAGES/DgKemkDe.png
+  Temp/IMAGES/Q_AeI_YI.jpg
+  Temp/IMAGES/jaf_5L9le.jpg
+  Temp/IMAGES/z7_ZHPLJI3.jpeg
+  Temp/IMAGES/h_Ojs6ey.jpg
+  Temp/IMAGES/J2h09mja_.jpg
+  Temp/IMAGES/JEokk_.jpeg
+  Temp/IMAGES/ozh4M_JA_5.jpg
+  Temp/IMAGES/pfdQ6vtsK.jpeg
+  Temp/IMAGES/_lMRz_ge.jpg
+  Temp/IMAGES/_yuGPdBF.png
+  Temp/IMAGES/mTtszhVGE3.jpg
+  Temp/IMAGES/qEp_m_F.jpeg
+  Temp/IMAGES/UJIS_eHDja.jpeg
+  Temp/IMAGES/ptq6YrRU.jpeg
+  Temp/IMAGES/BYsAjer2.jpg
+  Temp/IMAGES/_CHnTS_s__.jpg
