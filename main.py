@@ -13,10 +13,10 @@ def handle_file(path, root_folder, dist):
 def handle_archive(path, root_folder, dist):
     target_folder = root_folder / dist
     target_folder.mkdir(exist_ok=True)
-    ext = path.suffix
+    # ext = path.suffix
     new_name = normalize.normalize(path.name.split('.')[0])
 
-    print(path.name, path.name.split('.'), new_name)
+    # print(path.name, path.name.split('.'), new_name)
 
     archive_folder = target_folder / new_name
     archive_folder.mkdir(exist_ok=True)
@@ -25,9 +25,13 @@ def handle_archive(path, root_folder, dist):
         shutil.unpack_archive(str(path.resolve()), str(archive_folder.resolve()))
     except shutil.ReadError:
         archive_folder.rmdir()
+        # print(f'{path} ReadError')
+        path.unlink()
         return
     except FileNotFoundError:
         archive_folder.rmdir()
+        # print(f'{path} FileNotFoundError')
+        path.unlink()
         return
     path.unlink()
 
@@ -36,9 +40,13 @@ def remove_empty_folders(path):
     for item in path.iterdir():
         if item.is_dir():
             remove_empty_folders(item)
+            # print(f"  try delete {item}")
+
             try:
                 item.rmdir()
+                # print(f'{item} deleted')
             except OSError:
+                # print(f'{item} not deleted')
                 pass
 
 def main(folder_path):
@@ -52,6 +60,8 @@ def main(folder_path):
                 handle_file(file, folder_path, item)
     for file in scan_folders.result['ARCHIVES']:
         handle_archive(file, folder_path, 'ARCHIVES')
+    
+    remove_empty_folders(folder_path)
 
     scan_folders.out_log_folder(folder_path)
     

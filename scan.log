@@ -1,66 +1,97 @@
 EXT:
+  PPTX
+  PNG
+  SVG
+  OGG
+  PDF
   WAV
-  TXT
-  AMR
+  MKV
+  MOV
+  MP3
   JPEG
   DOC
-  PPTX
-  MP3
-  MKV
   JPG
-  SVG
-  PDF
+  XLSX
+  AVI
+  MP4
   DOCX
-  PNG
+  TXT
 EXT_UNKNOWN:
-  PY
-  H
-DOCUMENTS:
-  Temp/DOCUMENTS/tsMzhiSCHgr_.pptx
-  Temp/DOCUMENTS/Go__ZHx7ch.pdf
-  Temp/DOCUMENTS/0uj_qUchL.doc
-  Temp/DOCUMENTS/VSpHzhR9U.pdf
-  Temp/DOCUMENTS/rKJCHAyQN.pdf
-  Temp/DOCUMENTS/NpuwSmB_.pptx
-  Temp/DOCUMENTS/aa_0IMtI.txt
-  Temp/DOCUMENTS/ppuQOTS_JU.pdf
-  Temp/DOCUMENTS/urmUBYog.docx
-OTHER:
-  Temp/OTHER/H6Y9LIji.h
-  Temp/OTHER/pngz_JAEG.h
-  Temp/OTHER/kUjitjuSTO.h
-  Temp/OTHER/MRJIr9jZm.py
-AUDIO:
-  Temp/AUDIO/ftzhT_LOo.amr
-  Temp/AUDIO/_fl_EWsji.wav
-  Temp/AUDIO/KEk5PFs5.wav
-  Temp/AUDIO/_vt_SCHqOt.mp3
-VIDEO:
-  Temp/VIDEO/SHH8CZHmpB.mkv
+  TXX
+  ODT
+  TEXT
+  WAXV
+  DOCV
+  BMP
+  PPTXX
+  MOX
 IMAGES:
-  Temp/IMAGES/VSchjJA3qy.jpg
-  Temp/IMAGES/DQ_vH4Sl.png
-  Temp/IMAGES/AJErJUji_2d.svg
-  Temp/IMAGES/__ELi04C.jpg
-  Temp/IMAGES/4_etjub_r.jpeg
-  Temp/IMAGES/LjicZWonB.jpeg
-  Temp/IMAGES/9b_SCHchOa5.png
-  Temp/IMAGES/SFYMQJUoO.jpg
-  Temp/IMAGES/Z6cjSCHv_JA.jpeg
-  Temp/IMAGES/DgKemkDe.png
-  Temp/IMAGES/Q_AeI_YI.jpg
-  Temp/IMAGES/jaf_5L9le.jpg
-  Temp/IMAGES/z7_ZHPLJI3.jpeg
-  Temp/IMAGES/h_Ojs6ey.jpg
-  Temp/IMAGES/J2h09mja_.jpg
-  Temp/IMAGES/JEokk_.jpeg
-  Temp/IMAGES/ozh4M_JA_5.jpg
-  Temp/IMAGES/pfdQ6vtsK.jpeg
-  Temp/IMAGES/_lMRz_ge.jpg
-  Temp/IMAGES/_yuGPdBF.png
-  Temp/IMAGES/mTtszhVGE3.jpg
-  Temp/IMAGES/qEp_m_F.jpeg
-  Temp/IMAGES/UJIS_eHDja.jpeg
-  Temp/IMAGES/ptq6YrRU.jpeg
-  Temp/IMAGES/BYsAjer2.jpg
-  Temp/IMAGES/_CHnTS_s__.jpg
+  file_from_dir1_dir2.png
+  file_from_dir5.jpg
+  file_from_dir3_dir2.png
+  file_from_dir3_dir2.jpeg
+  file_from_dir3_dir2.jpg
+  file_from_dir5.jpeg
+  file_from_dir1_dir2.svg
+  file_from_dir3_dir2.svg
+OTHER:
+  file2_from_dir1_dir2.mox
+  file_from_dir3_.txx
+  file1_from_dir3_dir2.WAXV
+  file_from_dir5.docV
+  file_from_dir3_dir2.odt
+  not_extention
+  file_from_dir3_dir2.docV
+  file_from_dir5.bmp
+  file_from_dir1_dir2.pptxx
+  file1_from_dir1_dir2.WAXV
+  FILE2_FROM_dir2.MOX
+  file_from_dir1_dir2..bmp
+  file_from_dir1_dir2.odt
+  FILE3.text
+  FILE2.text
+  file_from_dir3_dir2.pptxx
+  file_from_dir3_dir2.bmp
+  file_from_dir3_dir2..bmp
+  FILE1_FROM_dir2.WAXV
+  file2_from_dir3_dir2.mox
+AUDIO:
+  file_from_dir1_dir2.ogg
+  file_from_dir3_dir2.ogg
+  file_from_dir1_dir2.wav
+  file_from_dir3_dir2.mp3
+  file_from_dir5.mp3
+  file_from_dir3_dir2.wav
+  ff.mp3
+DOCUMENTS:
+  kyrylytsja_fajl_iz_dir6.txt
+  file_from_dir5.doc
+  file_from_dir1_dir2.pdf
+  file_from_dir3_dir2.doc
+  file_from_dir1_dir2.txt
+  FILE1.text.txt
+  file_from_dir5.docx
+  file_from_dir3_dir2.xlsx
+  file_from_dir3_dir2.pptx
+  file_from_dir3_dir2.pdf
+  file_from_dir3_.txt
+  file_from_dir3_dir2.docx
+  file_from_dir1_dir2.pptx
+  file_from_dir3_dir2.txt
+  file_from_dir1_dir2.xlsx
+  ff_from_dir6dir7dir7.doc
+VIDEO:
+  file_from_dir5.MP4
+  file_from_dir1_dir2.aVI
+  file_from_dir3_dir2.MP4
+  file_from_dir3_dir2.aVI
+  file_from_dir5.Mkv
+  file_from_dir1_dir2.avi
+  ff_old.mkv
+  FILE2_FROM_dir2.MOV
+  file1_from_dir3_.mov
+  file_from_dir3_dir2.avi
+  file2_from_dir3_dir2.mov
+  file2_from_dir1_dir2.mov
+  ff.mkv
+  file_from_dir3_dir2.Mkv

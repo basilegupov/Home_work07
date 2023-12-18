@@ -21,11 +21,13 @@ def get_extensions(file_name):
 
 
 def scan_folder_rec(folder):
+
     for item in folder.iterdir():
         
         if item.is_dir():
            
-            if item.name.upper() not in param.WORK_FOLDERS:
+            # if item.name.upper() not in param.WORK_FOLDERS:
+            if item.name not in param.WORK_FOLDERS:
                 result['FOLDERS'].append(item)
                 scan_folder_rec(item)
             continue
@@ -46,23 +48,29 @@ def scan_folder(folder):
 
     init_result()
 
-    print(result)
-
     scan_folder_rec(folder)
+
+    # print(result)
+
 
 
 def out_log_folder_rec(folder):
+    
+
     for item in folder.iterdir():
-        
+
         if item.is_dir():
            
-            if item.name.upper() in param.WORK_FOLDERS and item.name.upper()!= 'ARCHIVES':
+            if item.name in param.WORK_FOLDERS and item.name != 'ARCHIVES':
+                
                 result['FOLDERS'].append(item)
-                scan_folder_rec(item)
+                out_log_folder_rec(item)
+
             continue
 
         extension = get_extensions(file_name=item.name)
         new_name = item.name
+
         if not extension:
             result['OTHER'].append(new_name)
         else:
