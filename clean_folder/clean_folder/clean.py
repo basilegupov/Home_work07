@@ -46,9 +46,6 @@ def get_params(file_ini='param.ini'):
 try:
     WORK_EXTENSIONS = get_params()
 except FileNotFoundError:
-#     WORK_EXTENSIONS = {}
-#
-# if len(WORK_EXTENSIONS) == 0:
     WORK_EXTENSIONS = {
         'JPEG': 'IMAGES', 'PNG': 'IMAGES', 'JPG': 'IMAGES', 'SVG': 'IMAGES',
         'AVI': 'VIDEO', 'MP4': 'VIDEO', 'MOV': 'VIDEO', 'MKV': 'VIDEO',
@@ -134,16 +131,21 @@ def out_log_folder(folder_wrk, file_log='scan.log'):
     init_result()
     out_log_folder_rec(folder_wrk)
     items = [item for item in result]
-    with open(file_log, 'w') as f_out:
-
-        for item in items:
-
-            if item != 'ARCHIVES' and item != 'FOLDERS':
-
-                f_out.write(f'{item}:\n')
-
-                for file in result[item]:
-                    f_out.write(f'  {file}\n')
+    # with open(file_log, 'w') as f_out:
+    #
+    #     for item in items:
+    #
+    #         if item != 'ARCHIVES' and item != 'FOLDERS':
+    #
+    #             f_out.write(f'{item}:\n')
+    #
+    #             for file in result[item]:
+    #                 f_out.write(f'  {file}\n')
+    for item in items:
+        if item != 'ARCHIVES' and item != 'FOLDERS':
+            print(f'{item}:')
+            for file in result[item]:
+                print(f'  {file}')
 
 
 def handle_file(path_in, root_folder, dist):

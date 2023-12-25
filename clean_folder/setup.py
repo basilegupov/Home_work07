@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='clean_folder',
-    version='0.0.15',
+    version='0.0.20',
     author='Basil Egupov',
     packages=find_packages(),
     entry_points={
