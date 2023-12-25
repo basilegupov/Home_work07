@@ -5,6 +5,7 @@ import param
 
 result = None
 
+
 def init_result():
     global result
     

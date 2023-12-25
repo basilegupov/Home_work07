@@ -4,6 +4,7 @@ import shutil
 import normalize
 from pathlib import Path
 
+
 def handle_file(path, root_folder, dist):
     target_folder = root_folder/dist
     target_folder.mkdir(exist_ok=True)
@@ -49,6 +50,7 @@ def remove_empty_folders(path):
                 # print(f'{item} not deleted')
                 pass
 
+
 def main(folder_path):
     
     scan_folders.scan_folder(folder_path)
@@ -66,6 +68,7 @@ def main(folder_path):
 
     scan_folders.out_log_folder(folder_path)
     
+
 if __name__ == '__main__':
     path = sys.argv[1]
     print(f'Start in {path}')
