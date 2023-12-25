@@ -42,8 +42,10 @@ def get_params():
     return res_out
 
 
-# WORK_EXTENSIONS = get_params()
-WORK_EXTENSIONS = {}
+try:
+    WORK_EXTENSIONS = get_params()
+except FileNotFoundError:
+    WORK_EXTENSIONS = {}
 
 if len(WORK_EXTENSIONS) == 0:
     WORK_EXTENSIONS = {
