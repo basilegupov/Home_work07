@@ -26,9 +26,10 @@ def normalize(name: str) -> str:
     return f"{name}.{'.'.join(ext)}"
 
 
-def get_params():
+def get_params(file_ini='param.ini'):
+    file_ini = Path(file_ini)
     res_out = {}
-    with open('param.ini', 'r') as file:
+    with open(file_ini, 'r') as file:
         for line in file:
 
             if len(line.strip()) > 0:
@@ -45,9 +46,9 @@ def get_params():
 try:
     WORK_EXTENSIONS = get_params()
 except FileNotFoundError:
-    WORK_EXTENSIONS = {}
-
-if len(WORK_EXTENSIONS) == 0:
+#     WORK_EXTENSIONS = {}
+#
+# if len(WORK_EXTENSIONS) == 0:
     WORK_EXTENSIONS = {
         'JPEG': 'IMAGES', 'PNG': 'IMAGES', 'JPG': 'IMAGES', 'SVG': 'IMAGES',
         'AVI': 'VIDEO', 'MP4': 'VIDEO', 'MOV': 'VIDEO', 'MKV': 'VIDEO',
