@@ -43,30 +43,32 @@ def get_params(file_ini='param.ini'):
     return res_out
 
 
-try:
-    WORK_EXTENSIONS = get_params()
-except FileNotFoundError:
-    WORK_EXTENSIONS = {
-        'JPEG': 'IMAGES', 'PNG': 'IMAGES', 'JPG': 'IMAGES', 'SVG': 'IMAGES',
-        'AVI': 'VIDEO', 'MP4': 'VIDEO', 'MOV': 'VIDEO', 'MKV': 'VIDEO',
-        'DOC': 'DOCUMENTS', 'DOCX': 'DOCUMENTS', 'TXT': 'DOCUMENTS',
-        'PDF': 'DOCUMENTS', 'XLSX': 'DOCUMENTS', 'PPTX': 'DOCUMENTS',
-        'MP3': 'AUDIO', 'OGG': 'AUDIO', 'WAV': 'AUDIO', 'AMR': 'AUDIO',
-        'ZIP': 'ARCHIVES', 'GZ': 'ARCHIVES', 'TAR': 'ARCHIVES',
-        '*': 'OTHER'}
-
-WORK_FOLDERS = set([fold.lower() for ext, fold in WORK_EXTENSIONS.items()])
-
+WORK_EXTENSIONS = {}
+WORK_FOLDERS = []
 result = {}
 
 
-def init_result():
-    global result
+def init_vars():
+    global result, WORK_EXTENSIONS, WORK_FOLDERS
+
+    try:
+        WORK_EXTENSIONS = get_params()
+    except FileNotFoundError:
+        WORK_EXTENSIONS = {
+            'JPEG': 'IMAGES', 'PNG': 'IMAGES', 'JPG': 'IMAGES', 'SVG': 'IMAGES',
+            'AVI': 'VIDEO', 'MP4': 'VIDEO', 'MOV': 'VIDEO', 'MKV': 'VIDEO',
+            'DOC': 'DOCUMENTS', 'DOCX': 'DOCUMENTS', 'TXT': 'DOCUMENTS',
+            'PDF': 'DOCUMENTS', 'XLSX': 'DOCUMENTS', 'PPTX': 'DOCUMENTS',
+            'MP3': 'AUDIO', 'OGG': 'AUDIO', 'WAV': 'AUDIO', 'AMR': 'AUDIO',
+            'ZIP': 'ARCHIVES', 'GZ': 'ARCHIVES', 'TAR': 'ARCHIVES',
+            '*': 'OTHER'}
+
+    WORK_FOLDERS = set([fold.lower() for ext, fold in WORK_EXTENSIONS.items()])
 
     result = {'FOLDERS': [], 'EXT': set(), 'EXT_UNKNOWN': set()}
     for item in WORK_FOLDERS:
         result[item.upper()] = []
-    return 'Ok'
+    return result, WORK_EXTENSIONS, WORK_FOLDERS
 
 
 def get_extensions(file_name):
@@ -78,7 +80,6 @@ def scan_folder_rec(folder_wrk):
 
         if item.is_dir():
 
-            # if item.name.upper() not in param.WORK_FOLDERS:
             if item.name.upper() not in WORK_FOLDERS:
                 result['FOLDERS'].append(item)
                 scan_folder_rec(item)
@@ -98,7 +99,7 @@ def scan_folder_rec(folder_wrk):
 
 
 def scan_folder(folder_wrk):
-    init_result()
+    init_vars()
     scan_folder_rec(folder_wrk)
 
 
@@ -106,7 +107,6 @@ def out_log_folder_rec(folder_wrk):
     for item in folder_wrk.iterdir():
 
         if item.is_dir():
-
             if item.name in WORK_FOLDERS and item.name.upper() != 'ARCHIVES':
                 result['FOLDERS'].append(item)
                 out_log_folder_rec(item)
@@ -128,7 +128,7 @@ def out_log_folder_rec(folder_wrk):
 
 
 def out_log_folder(folder_wrk, file_log='scan.log'):
-    init_result()
+    init_vars()
     out_log_folder_rec(folder_wrk)
     items = [item for item in result]
     # with open(file_log, 'w') as f_out:
